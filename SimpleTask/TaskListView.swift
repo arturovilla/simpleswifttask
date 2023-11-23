@@ -13,7 +13,11 @@ struct TaskListView: View {
     
     var body: some View {
         List(tasks) {task in
-            Text(task.title)
+            HStack{
+                Image(systemName: task.isCompleted ? "largecircle.fill.circle" : "circle")
+                Text(task.title)
+            }
+            
         }}
 }
 

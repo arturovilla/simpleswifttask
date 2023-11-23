@@ -47,7 +47,7 @@ enum TaskSection: Identifiable, CaseIterable, Hashable {
             case .done:
                 "checkmark.circle"
             case .upcoming:
-                "calender"
+                "calendar"
             case .list(_):
                 "folder"
         }
