@@ -12,9 +12,9 @@ struct Task: Identifiable {
     var title: String
     var isCompleted: Bool
     var dueDate: Date
-    var tags: Array<String>
+    var tags: [String]
     
-    init(title: String, isCompleted: Bool = false, dueDate: Date = Date(), tags: Array<String> = []){
+    init(title: String, isCompleted: Bool = false, dueDate: Date = Date(), tags: [String] = []){
         self.title = title
         self.isCompleted = isCompleted
         self.dueDate = dueDate
