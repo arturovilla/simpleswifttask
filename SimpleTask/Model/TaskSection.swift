@@ -7,7 +7,8 @@
 
 import Foundation
 
-enum TaskSection: Identifiable{
+enum TaskSection: Identifiable, CaseIterable, Hashable {
+    
     case all
     case done
     case upcoming
@@ -35,7 +36,27 @@ enum TaskSection: Identifiable{
             case .upcoming:
                 "Upcoming"
             case .list(let taskGroup):
-                taskGroup.id.uuidString
+                taskGroup.title
         }
+    }
+    
+    var iconName: String{
+        switch self{
+            case .all:
+                "star"
+            case .done:
+                "checkmark.circle"
+            case .upcoming:
+                "calender"
+            case .list(_):
+                "folder"
+        }
+    }
+    
+    static var allCases: [TaskSection]{
+        [.all,.done,.upcoming]
+    }
+    static func == (lhs: TaskSection, rhs: TaskSection) -> Bool{
+        lhs.id == rhs.id
     }
 }
