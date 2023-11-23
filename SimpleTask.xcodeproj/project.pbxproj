@@ -14,6 +14,7 @@
 		69DB00802B0FAF23004A3014 /* SimpleTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB007F2B0FAF23004A3014 /* SimpleTaskTests.swift */; };
 		69DB008A2B0FAF23004A3014 /* SimpleTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB00892B0FAF23004A3014 /* SimpleTaskUITests.swift */; };
 		69DB008C2B0FAF23004A3014 /* SimpleTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB008B2B0FAF23004A3014 /* SimpleTaskUITestsLaunchTests.swift */; };
+		69DB009A2B0FAF85004A3014 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB00992B0FAF85004A3014 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		69DB00852B0FAF23004A3014 /* SimpleTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69DB00892B0FAF23004A3014 /* SimpleTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTaskUITests.swift; sourceTree = "<group>"; };
 		69DB008B2B0FAF23004A3014 /* SimpleTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		69DB00992B0FAF85004A3014 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		69DB006C2B0FAF22004A3014 /* SimpleTask */ = {
 			isa = PBXGroup;
 			children = (
+				69DB00982B0FAF74004A3014 /* Model */,
 				69DB006D2B0FAF22004A3014 /* SimpleTaskApp.swift */,
 				69DB006F2B0FAF22004A3014 /* ContentView.swift */,
 				69DB00712B0FAF22004A3014 /* Assets.xcassets */,
@@ -127,6 +130,14 @@
 				69DB008B2B0FAF23004A3014 /* SimpleTaskUITestsLaunchTests.swift */,
 			);
 			path = SimpleTaskUITests;
+			sourceTree = "<group>";
+		};
+		69DB00982B0FAF74004A3014 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				69DB00992B0FAF85004A3014 /* Task.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69DB00702B0FAF22004A3014 /* ContentView.swift in Sources */,
+				69DB009A2B0FAF85004A3014 /* Task.swift in Sources */,
 				69DB006E2B0FAF22004A3014 /* SimpleTaskApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,10 +433,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SimpleTask/SimpleTask.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleTask/Preview Content\"";
+				DEVELOPMENT_TEAM = Y52LSB67MJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -446,10 +460,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SimpleTask/SimpleTask.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleTask/Preview Content\"";
+				DEVELOPMENT_TEAM = Y52LSB67MJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
