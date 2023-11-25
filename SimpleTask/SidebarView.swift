@@ -9,8 +9,8 @@ import SwiftUI
 
 struct SidebarView: View {
     
-    let userCreatedGroups: [TaskGroup]
-    @State private var selection = TaskSection.all
+    @Binding var userCreatedGroups: [TaskGroup]
+    @Binding var selection: TaskSection?
     var body: some View {
         List(selection: $selection ){
             Section("Favorites"){
@@ -28,6 +28,7 @@ struct SidebarView: View {
 }
 
 #Preview {
-    SidebarView(userCreatedGroups: TaskGroup.examples())
+    SidebarView(userCreatedGroups: .constant(TaskGroup.examples()),
+                selection: .constant(.all))
         .listStyle(.sidebar)
 }
